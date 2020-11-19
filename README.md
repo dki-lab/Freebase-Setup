@@ -1,3 +1,7 @@
+# Under Construction :construction:
+We will finish this tutorial as soon as possible!
+
+
 # Setting up Freebase using Virtuoso
 We offer some simple instructions on setting up Freebase using Virtuoso Sparql endpoint. This is only one option among many. Feel free to choose your own way to index Freebase.
 
