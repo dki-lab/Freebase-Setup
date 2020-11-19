@@ -8,3 +8,6 @@ Let's setup Freebase server first.
 4. Run "pwd"
 5. Replace /dev/shm/vdb/ in virtuoso.ini with the output of Step 4.
 6. Run "virtuoso-t -f"
+
+## Materials on Freebase
+TBD
