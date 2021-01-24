@@ -32,7 +32,7 @@ python3 virtuoso.py stop 3001
 
 A server with at least 100 GB RAM is recommended. You may adjust the maximum amount of RAM the service may use and other configurations via the provided script.
 
-# Useful materials about Freebase
+## Useful materials about Freebase
 - Some basic concepts: https://developers.google.com/freebase/guide/basic_concepts
 - A brief review of Freebase: https://github.com/nchah/freebase-mql
 - [RDF](https://www.w3.org/TR/rdf11-concepts/) and [SPARQL](https://www.w3.org/TR/sparql11-query/)
