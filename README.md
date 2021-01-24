@@ -40,7 +40,7 @@ A server with at least 100 GB RAM is recommended. You may adjust the maximum amo
 - A list of frequently used relations for meta-information:
   - `common.topic`: the type of all entities. An item is an entity if it has this type.
   - `type.object.name`: the canonical name of an item (entity/type/property). Filter by the language decorator (e.g., `@en`) if only a certain language is of interest.
-  - `common.topic.alias`: a list of common aliases of an item.
+  - `common.topic.alias`: a list of common aliases of an entity.
   - `common.topic.description`: a textual description of an entity.
   - `type.object.type`: the list of types of an entity.
   - `type.type.properties`: the list of properties with a type as the domain type.
