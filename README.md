@@ -8,7 +8,7 @@ This repository contains instructions for setting up a SPARQL endpoint to Freeba
 
 ### Freebase data dump
 
-The offical latest Freebase dump can be downloaded [here](https://developers.google.com/freebase). However, in the official dump, the format of some literal types is not fully compatible with the N-Triples RDF standard (it's missing type decoration such as `^^<http://www.w3.org/2001/XMLSchema#integer>`), which may cause it to fail to load into triplestores like Virtuoso. We fixed this issue. Our processed Virtuoso DB file can be downloaded from [here](https://www.dropbox.com/s/q38g0fwx1a3lz8q/virtuoso_db.zip) or via wget:
+The latest offical data dump of Freebase can be downloaded [here](https://developers.google.com/freebase). However, in the official dump, the format of some literal types is not fully compatible with the N-Triples RDF standard (it's missing type decoration such as `^^<http://www.w3.org/2001/XMLSchema#integer>`), which may cause it to fail to load into triplestores like Virtuoso. We fixed this issue. Our processed Virtuoso DB file can be downloaded from [here](https://www.dropbox.com/s/q38g0fwx1a3lz8q/virtuoso_db.zip) or via wget:
 
 ```
 wget https://www.dropbox.com/s/q38g0fwx1a3lz8q/virtuoso_db.zip
