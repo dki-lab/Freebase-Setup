@@ -14,7 +14,7 @@ The latest offical data dump of Freebase can be downloaded [here](https://develo
 wget https://www.dropbox.com/s/q38g0fwx1a3lz8q/virtuoso_db.zip
 ```
 
-In case you'd like to load your own RDF into Virtuoso, see [here](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) for instructions. If you prefer some other triplestore, contact [us](su.809@osu.edu) for the fixed RDF file for Freebase if needed. 
+In case you'd like to load your own RDF into Virtuoso, see [here](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) for instructions. If you prefer some other triplestore, contact [us](mailto:su.809@osu.edu) for the fixed RDF file for Freebase if needed. 
 
 ### Managing the Virtuoso service
 
