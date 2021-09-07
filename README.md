@@ -21,7 +21,7 @@ In case you'd like to load your own RDF into Virtuoso, see [here](http://vos.ope
 We provide a wrapper script (`virtuoso.py`, adapted from [Sempre](https://github.com/percyliang/sempre)) for managing the Virtuoso service. To use it, first change the `virtuosoPath` in the script to your local Virtuoso directory. Assuming the Virtuoso db file is located in a directory named `virtuoso_db` under the same directory as the script `virtuoso.py` and 3001 is the intended HTTP port for the service, to start the Virtuoso service:
 
 ```
-python3 virtuoso.py start 3001 virtuoso_db
+python3 virtuoso.py start 3001 -d virtuoso_db
 ```
 
 and to stop a currently running service at the same port:
