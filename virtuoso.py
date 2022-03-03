@@ -24,15 +24,15 @@ def run(command):
 
 def start(dbPath, port):
 
-#   if not os.path.exists(dbPath):
-#     os.mkdir(dbPath)
+  if not os.path.exists(dbPath):
+    os.mkdir(dbPath)
 
   # Recommended: 70% of RAM, each buffer is 8K
   # Use a fraction of the free RAM. The result may vary across runs.
-  memFree = parseInt(`cat /proc/meminfo | grep MemFree | awk '{print $2}'`) # KB
-#   Use a fraction of the total RAM. The result is the same across runs.
-#   memFree = int(run("cat /proc/meminfo | grep MemTotal | awk '{print $2}'")) # KB
-  numberOfBuffers = memFree * 0.70 / 8
+  # memFree = parseInt(`cat /proc/meminfo | grep MemFree | awk '{print $2}'`) # KB
+  # Use a fraction of the total RAM. The result is the same across runs.
+  memFree = int(run("cat /proc/meminfo | grep MemTotal | awk '{print $2}'")) # KB
+  numberOfBuffers = memFree * 0.15 / 8
   maxDirtyBuffers = numberOfBuffers / 2
   print(f"{memFree} KB free, using {numberOfBuffers} buffers, {maxDirtyBuffers} dirty buffers")
 
@@ -96,7 +96,7 @@ def start(dbPath, port):
     f"ServerPort = {httpPort(port)}\n"
     f"Charset = UTF-8\n"
     f"ServerThreads = 15 ; increased from unknown\n"
-  )
+  ) 
 
   configPath = f"{dbPath}/virtuoso.ini"
   print(config)
@@ -127,7 +127,7 @@ if __name__ == "__main__":
     if not args.db_path:
       print("please specify path to the db directory with -d")
       sys.exit()
-
+      
     if not os.path.isdir(args.db_path):
       print("the path specified does not exist")
       sys.exit()
