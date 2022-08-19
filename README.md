@@ -14,7 +14,7 @@ The latest offical data dump of Freebase can be downloaded [here](https://develo
 wget https://www.dropbox.com/s/q38g0fwx1a3lz8q/virtuoso_db.zip
 ```
 
-In case you'd like to load your own RDF into Virtuoso, see [here](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) for instructions. If you prefer some other triplestore, try fixing the literal format issue with of Freebase using the script `fix_freebase_literal_format.py`. 
+In case you'd like to load your own RDF into Virtuoso, see [here](http://vos.openlinksw.com/owiki/wiki/VOS/VirtBulkRDFLoader) for instructions. If you prefer some other triplestore, try fixing the literal format issue of Freebase using the script `fix_freebase_literal_format.py` to get the N-Triples-formatted data. 
 
 ### Managing the Virtuoso service
 
